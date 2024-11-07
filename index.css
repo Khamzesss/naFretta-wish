@@ -73,14 +73,13 @@ a {
 /* Если ты зашел сюда и решил взять код, то я дарю его тебе. Хьанал хуьйла! */
 
 button {
-  position: absolute;
-  bottom: 350px;
-  /* left: 50%; */
-  transform: translateX(-50%);
+  position: fixed;
+  top: 600px;
+  transform: translateX(-66px);
+  z-index: 9999;
   /* width: 170px;
   height: 50px;
   background-color: yellow; */
-  margin-top: 100px;
   background: linear-gradient(45deg, #da74746d, #51c01959, #efef0a7f);
   background-size: 200% 200%;
   animation: gradientAnimation 1s infinite;
@@ -90,6 +89,13 @@ button {
   padding: 10px 20px;
   font-size: 20px;
 }
+@media screen and (max-width: 600px) {
+  button {
+  padding: 8px 16px; /* уменьшаем отступы для мобильных устройств */
+  font-size: 14px; /* уменьшаем размер шрифта для мобильных устройств */
+  }
+  }
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -123,3 +129,4 @@ button {
     border-color: yellow;
   }
 }
+
