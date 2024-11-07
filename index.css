@@ -73,9 +73,14 @@ a {
 /* Если ты зашел сюда и решил взять код, то я дарю его тебе. Хьанал хуьйла! */
 
 button {
+  position: absolute;
+  bottom: 350px;
+  /* left: 50%; */
+  transform: translateX(-50%);
   /* width: 170px;
   height: 50px;
   background-color: yellow; */
+  margin-top: 100px;
   background: linear-gradient(45deg, #da74746d, #51c01959, #efef0a7f);
   background-size: 200% 200%;
   animation: gradientAnimation 1s infinite;
@@ -99,8 +104,22 @@ button {
 
 #message {
   display: none;
-  font-size: 25px;
+  font-size: 29px;
   color: yellow;
   border: 3px solid yellow;
-  border-radius: 16px;
+  border-radius: 20px;
+ padding: 10px;
+ animation: blink 2.3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: yellow;
+  }
 }
