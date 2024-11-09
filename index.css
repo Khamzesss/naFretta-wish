@@ -129,7 +129,7 @@ button {
 
 
 .padding {
-  transform: translateY(365px);
+  transform: translateY(345px);
   position: absolute;
   display: flex;
   width: 300px;
