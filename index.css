@@ -127,13 +127,6 @@ button {
 
 /* Footer */
 
-.footer {
-  position: absolute;
-  display: flex;
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-}
 
 .padding {
   transform: translateY(365px);
@@ -145,6 +138,5 @@ button {
   align-items: center;
   font-size: 20px;
   border-radius: 20px;
-  border: 2px solid #dede19;
-  color:chartreuse;
+  color: yellow;
 }
